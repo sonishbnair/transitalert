@@ -3,7 +3,7 @@ import urllib
 from BeautifulSoup import *
 
 #Default stop # is 12231 (Summit & Essex)
-njtURL = "http://mybusnow.njtransit.com/bustime/wireless/html/eta.jsp?route=---&direction=---&displaydirection=---&stop=---&findstop=on&selectedRtpiFeeds=&id="
+njtURL = "*?route=---&direction=---&displaydirection=---&stop=---&findstop=on&selectedRtpiFeeds=&id="
 #print "SYS Len:", len(sys.argv), "sys.argv[0] ", sys.argv[0]
 
 if len(sys.argv) > 1:
