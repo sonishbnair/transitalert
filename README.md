@@ -1,1 +1,2 @@
-# transitalert
+# Transit alert
+This app is to get the transit status...
