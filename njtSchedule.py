@@ -1,6 +1,7 @@
 import sys
 import urllib
-from BeautifulSoup import *
+#from BeautifulSoup import *
+from bs4 import *
 
 #Default stop # is 12231 (Summit & Essex)
 njtURL = "http://mybusnow.njtransit.com/bustime/wireless/html/eta.jsp?route=---&direction=---&displaydirection=---&stop=---&findstop=on&selectedRtpiFeeds=&id="
@@ -14,7 +15,7 @@ else:
 print njtURL
 
 html = urllib.urlopen(njtURL).read()
-soup = BeautifulSoup(html)
+soup = BeautifulSoup(html, "html.parser")
 tags = soup('b')
 
 print tags
